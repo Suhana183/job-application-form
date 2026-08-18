@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Application Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="form-box">
+
+            <!-- Header -->
+            <div class="form-header">
+
+                <div class="icon">
+                    💼
+                </div>
+
+                <h1>Job Application</h1>
+
+                <p>
+                    Fill in your details to apply for the position
+                </p>
+
+            </div>
+
+
+            <!-- Form -->
+            <form id="applicationForm">
+
+                <!-- Name -->
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                    >
+
+                    <small id="nameError"></small>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+
+                    <small id="emailError"></small>
+
+                </div>
+
+
+                <!-- Phone -->
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        maxlength="10"
+                    >
+
+                    <small id="phoneError"></small>
+
+                </div>
+
+
+                <!-- Message -->
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Write your message"
+                    ></textarea>
+
+                    <small id="messageError"></small>
+
+                </div>
+
+
+                <!-- Submit -->
+                <button type="submit">
+                    <span>➤</span>
+                    Submit Application
+                </button>
+
+
+                <!-- Success message -->
+                <p id="successMessage"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
